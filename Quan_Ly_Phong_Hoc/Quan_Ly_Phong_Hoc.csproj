@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63D2F96F-C8EA-4FE5-8CAA-BFB96860D2AD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Quan_Ly_Phong_Hoc</RootNamespace>
+    <AssemblyName>Quan_Ly_Phong_Hoc</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuColorTransition">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuColorTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGauge">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGroupBox">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuGroupBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPanel">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRating">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuRating.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSeparator">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuSeparator.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShadowPanel">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShapes">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuShapes.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSnackbar">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuSnackbar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToggleSwitch">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuToggleSwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToolTip">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.Deprecated">
+      <HintPath>D:\tai xuong\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaoCao\BC_Danhsachdatphong.cs">
+      <DependentUpon>BC_Danhsachdatphong.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\BC_Danhsachdatphong.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BC_Danhsachdatphong.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Quenmatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Quenmatkhau.Designer.cs">
+      <DependentUpon>Frm_Quenmatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeAdmin.Designer.cs">
+      <DependentUpon>HomeAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDangKy.Designer.cs">
+      <DependentUpon>FrmDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDangNhap.Designer.cs">
+      <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeGV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeGV.Designer.cs">
+      <DependentUpon>HomeGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mdl_GV\DS_Phong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mdl_GV\DS_Phong.Designer.cs">
+      <DependentUpon>DS_Phong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mdl_GV\Form_Mucdich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mdl_GV\Form_Mucdich.Designer.cs">
+      <DependentUpon>Form_Mucdich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mdl_GV\Frm_Thong_tin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mdl_GV\Frm_Thong_tin.Designer.cs">
+      <DependentUpon>Frm_Thong_tin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mdl_GV\Frm_Lich_su.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mdl_GV\Frm_Lich_su.Designer.cs">
+      <DependentUpon>Frm_Lich_su.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mdl_GV\Ketnoi.cs" />
+    <Compile Include="Module\ComboboxItem.cs" />
+    <Compile Include="Module\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\FLoaiPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\FLoaiPhong.Designer.cs">
+      <DependentUpon>FLoaiPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Form_BC_DS_phong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Form_BC_DS_phong.Designer.cs">
+      <DependentUpon>Form_BC_DS_phong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Form_BC_SL_Phong_Hoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Form_BC_SL_Phong_Hoc.Designer.cs">
+      <DependentUpon>Form_BC_SL_Phong_Hoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Form_Tuchoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Form_Tuchoi.Designer.cs">
+      <DependentUpon>Form_Tuchoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\FrmBaocao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\FrmBaocao.Designer.cs">
+      <DependentUpon>FrmBaocao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\FrmDuyetPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\FrmDuyetPhong.Designer.cs">
+      <DependentUpon>FrmDuyetPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Frm_Chitiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Frm_Chitiet.Designer.cs">
+      <DependentUpon>Frm_Chitiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Ketnoi.cs" />
+    <Compile Include="Module\Frm_Ca_hoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Frm_Ca_hoc.Designer.cs">
+      <DependentUpon>Frm_Ca_hoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Frm_GV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Frm_GV.Designer.cs">
+      <DependentUpon>Frm_GV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Frm_phonghoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Frm_phonghoc.Designer.cs">
+      <DependentUpon>Frm_phonghoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Lich_su_su_dung_phong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Lich_su_su_dung_phong.Designer.cs">
+      <DependentUpon>Lich_su_su_dung_phong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Ql_Loai_phong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Ql_Loai_phong.Designer.cs">
+      <DependentUpon>Ql_Loai_phong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Quan_ly_nguoi_dung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Quan_ly_nguoi_dung.Designer.cs">
+      <DependentUpon>Quan_ly_nguoi_dung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Quan_Ly_Phong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Quan_Ly_Phong.Designer.cs">
+      <DependentUpon>Quan_Ly_Phong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Quan_ly_ca_hoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Quan_ly_ca_hoc.Designer.cs">
+      <DependentUpon>Quan_ly_ca_hoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Thong_ke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Thong_ke.Designer.cs">
+      <DependentUpon>Thong_ke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLPhongHocDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLPhongHocDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Content Include="BaoCao\DS_Phong_da_dat.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BaoCao\DS_Phong.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BaoCao\Report_DSDatphong.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Frm_Quenmatkhau.resx">
+      <DependentUpon>Frm_Quenmatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeAdmin.resx">
+      <DependentUpon>HomeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDangKy.resx">
+      <DependentUpon>FrmDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDangNhap.resx">
+      <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeGV.resx">
+      <DependentUpon>HomeGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mdl_GV\DS_Phong.resx">
+      <DependentUpon>DS_Phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mdl_GV\Form_Mucdich.resx">
+      <DependentUpon>Form_Mucdich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mdl_GV\Frm_Thong_tin.resx">
+      <DependentUpon>Frm_Thong_tin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mdl_GV\Frm_Lich_su.resx">
+      <DependentUpon>Frm_Lich_su.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\FLoaiPhong.resx">
+      <DependentUpon>FLoaiPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Form_BC_DS_phong.resx">
+      <DependentUpon>Form_BC_DS_phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Form_BC_SL_Phong_Hoc.resx">
+      <DependentUpon>Form_BC_SL_Phong_Hoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Form_Tuchoi.resx">
+      <DependentUpon>Form_Tuchoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\FrmBaocao.resx">
+      <DependentUpon>FrmBaocao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\FrmDuyetPhong.resx">
+      <DependentUpon>FrmDuyetPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Frm_Ca_hoc.resx">
+      <DependentUpon>Frm_Ca_hoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Frm_Chitiet.resx">
+      <DependentUpon>Frm_Chitiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Frm_GV.resx">
+      <DependentUpon>Frm_GV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Frm_phonghoc.resx">
+      <DependentUpon>Frm_phonghoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Lich_su_su_dung_phong.resx">
+      <DependentUpon>Lich_su_su_dung_phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Ql_Loai_phong.resx">
+      <DependentUpon>Ql_Loai_phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Quan_ly_ca_hoc.resx">
+      <DependentUpon>Quan_ly_ca_hoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Quan_ly_nguoi_dung.resx">
+      <DependentUpon>Quan_ly_nguoi_dung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Quan_Ly_Phong.resx">
+      <DependentUpon>Quan_Ly_Phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Thong_ke.resx">
+      <DependentUpon>Thong_ke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="BaoCao\BC_Danhsachdatphong.xsc">
+      <DependentUpon>BC_Danhsachdatphong.xsd</DependentUpon>
+    </None>
+    <None Include="BaoCao\BC_Danhsachdatphong.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BC_Danhsachdatphong.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BaoCao\BC_Danhsachdatphong.xss">
+      <DependentUpon>BC_Danhsachdatphong.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QLPhongHocDataSet.xsc">
+      <DependentUpon>QLPhongHocDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLPhongHocDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLPhongHocDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLPhongHocDataSet.xss">
+      <DependentUpon>QLPhongHocDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\11sao.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-black-and-white-icon-of-a-school-building-vector-png-image_15886955.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-black-and-white-clock-icon-on-a-gray-background-vector-png-image_6971714.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-black-and-white-clock-icon-on-a-gray-background-vector-png-image_6971714 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-icon-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-users-group-others.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SnapBG.ai_1748343052007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SnapBG.ai_1748343253422.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Image\user-icon-in-trendy-flat-style-isolated-on-grey-background-user-symbol-for-your-web-site-design-logo-app-ui-illustration-eps10-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Image\png-transparent-computer-icons-person-pion-black-desktop-wallpaper-share-icon-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Image\password-copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
